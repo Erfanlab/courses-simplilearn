@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript object</h1>
+    <p id="demo"></p>
+
+<script>
+
+var staudent ={
+    name:"erfan",
+    age:23,
+    studies:"learn javascript"
+};
+document.getElementById('demo').innerHTML= ' /Name:'+staudent.name +' /Age:'+staudent.age +'/study:'+staudent.studies
+
+
+</script>
+
+<script>
+    var staudent = new Object();
+    staudent.name='ali',
+    staudent.age= 28,
+    staudent.studies='english'
+    document.getElementById('demo').innerHTML= ' /Name:'+staudent.name +' /Age:'+staudent.age +'/study:'+staudent.studies
+    
+    
+    
+
+    
+</script>
+
+
+<script>
+    
+    function stud( name, age, studies){
+        this.name= name;
+        this.age= age;
+        this.studies= studies;
+    }
+    var staudent = stud('kk',28,'germany');
+    document.getElementById('demo').innerHTML= ' /Name:'+staudent.name +' /Age:'+staudent.age +'/study:'+staudent.studies
+</script>
+
+
+</body>
+</html>

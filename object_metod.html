@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h4>object metod</h4>
+<p id="demo"></p>
+
+<button id="click">click me</button>
+
+<script>
+let user={
+    name:'ali',
+    age:28
+};
+
+
+function sayhi(){
+    alert("hello!");
+};
+
+user.message = sayhi;
+document.getElementById('demo').innerHTML = 'hi  :  ' + user.name;
+
+document.getElementById('click').onclick = user.message;
+
+</script>
+</body>
+
+
+</html>
